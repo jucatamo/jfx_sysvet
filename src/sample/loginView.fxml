@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="CENTER" hgap="10.0" prefHeight="-1.0" prefWidth="-1.0" vgap="10.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.Controlador.Controller">
+  <children>
+    <Pane fx:id="loginViewForm" minHeight="-1.0" minWidth="-1.0" prefHeight="768.0" prefWidth="1360.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <children>
+        <TitledPane fx:id="loginPanel" animated="false" collapsible="false" layoutX="529.0" layoutY="230.0" text="Login">
+          <content>
+            <AnchorPane id="Content" fx:id="loginSubPanel" minHeight="0.0" minWidth="0.0" prefHeight="184.0" prefWidth="319.0">
+              <children>
+                <Button fx:id="loginBt" cancelButton="false" defaultButton="false" layoutX="58.0" layoutY="141.0" mnemonicParsing="false" onAction="#loginClick" prefWidth="83.0" text="Iniciar Sesion" />
+                <Label fx:id="userLab" layoutX="58.0" layoutY="72.0" text="USUARIO" />
+                <Label fx:id="passwordLab" layoutX="58.0" layoutY="101.0" text="CONTRASEÑA:" />
+                <TextField layoutX="148.0" layoutY="72.0" prefWidth="126.0" />
+                <TextField layoutX="148.0" layoutY="98.0" prefWidth="126.0" />
+                <Button fx:id="exitBt" cancelButton="false" defaultButton="false" layoutX="160.0" layoutY="141.0" mnemonicParsing="false" prefWidth="82.9998779296875" text="Salir" />
+                <Label fx:id="titleLab" layoutX="94.0" layoutY="16.0" prefWidth="154.00009999999747" text="SYSVET SQL">
+                  <font>
+                    <Font size="20.0" />
+                  </font>
+                </Label>
+              </children>
+            </AnchorPane>
+          </content>
+        </TitledPane>
+        <ToolBar fx:id="statusBar" blendMode="DARKEN" layoutX="0.0" layoutY="0.0" minHeight="19.0" prefHeight="19.0" prefWidth="1360.0">
+          <items>
+            <Label fx:id="statusLab" prefWidth="409.0" text="" />
+          </items>
+        </ToolBar>
+        <GridPane fx:id="menuGrid" layoutX="14.0" layoutY="29.0" prefHeight="448.0" prefWidth="155.0">
+          <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          </columnConstraints>
+          <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          </rowConstraints>
+        </GridPane>
+      </children>
+    </Pane>
+  </children>
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+</GridPane>
